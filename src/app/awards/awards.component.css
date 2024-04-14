@@ -3,10 +3,10 @@
 .body{
     position: relative;
     height: 20vh;
-    width: 100vw;
+    width: 100%;
     background-color: rgb(255,193,7);
-    margin: 0rem;
-    overflow:hidden ;    
+    margin: 0;
+    overflow:hidden;    
 }
 h3{
     color: black;
