@@ -1,0 +1,134 @@
+<h1>Contact Us</h1>
+<div class="container row row-cols-lg-2 row-cols-md-2 row-cols-sm-1 row-cols-xs-1">
+    <div class="contact-details">
+        <h2>Contact Details</h2>
+        <table>
+            <tr>
+                <th>Address</th>
+            </tr>
+            <tr>
+                <td>Burgring 12 </td>
+            </tr>
+            <tr>
+                <td>1010 Vienna, Austria</td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <th>Phone</th>
+            </tr>
+            <tr>
+                <td>+43 1 234 678</td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <th>Email</th>
+            </tr>
+            <tr>info&#64;twfocus.at</tr>
+        </table>
+
+        <table>
+            <tr>
+                <th>Hours</th>
+            </tr>
+            <tr>
+                <td>Mo-Fri 10am-8pm</td>
+            </tr>
+            <tr>
+                <td>Saturday 10am-6pm</td>
+            </tr>
+            <tr>
+                <td>Sunday and Holidays closed!</td>
+            </tr>
+        </table>
+        <br>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2659.01128964231!2d16.35789637660765!3d48.20639847125112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476d0790ce225dcb%3A0xa5164b5b0ecc4058!2sBurgring%2012%2C%201010%20Wien!5e0!3m2!1sen!2sat!4v1713039773602!5m2!1sen!2sat" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </div>
+
+    <div class="contact-form">
+        <h2>Contact Form</h2>
+        <p>Please fill out all fields</p>
+        <form (ngSubmit)="onSubmit()" [formGroup]="myForm">
+            
+            <br>
+            <label>First Name:
+                <br>
+                <input formControlName="first_name" type="text">
+            </label>
+            <p *ngIf="myForm.get('first_name')?.errors?.['required'] && myForm.get('first_name')?.touched"
+                [style.color]='"red"'>The first name is required.</p>
+            <p></p>
+            <label>Last Name:
+                <br>
+                <input formControlName="last_name" type="text">
+            </label>
+            <p *ngIf="myForm.get('last_name')?.errors?.['required'] && myForm.get('last_name')?.touched"
+                [style.color]='"red"'>
+                The last name is required.</p>
+            <p></p>
+            <label>E-Mail:
+                <br>
+                <input formControlName="email" type="text">
+            </label>
+            <p *ngIf="myForm.get('email')?.errors?.['required'] && myForm.get('email')?.touched" [style.color]='"red"'>
+                E-Mail
+                address is required.</p>
+            <p></p>
+            <label>Phone:
+                <br>
+                <input formControlName="phone" type="text">
+            </label>
+            <p *ngIf="myForm.get('phone')?.errors?.['required'] && myForm.get('phone')?.touched" [style.color]='"red"'>
+                Phone
+                number is required.</p>
+            <p></p>
+            <label>Message:
+                <br>
+                <textarea rows="4" cols="50" name="message" formControlName="message" id="message"></textarea>
+            </label>
+            <p *ngIf="myForm.get('message')?.errors?.['required'] && myForm.get('message')?.touched"
+                [style.color]='"red"'>A
+                message name is required.</p>
+            <p></p>
+            <label for="type_of_shoot">Type of Shoot</label>
+            <br>
+            <select name="type_of_shoot" id="type_of_shoot" formControlName="type_of_shoot">
+                <option value="personal">Personal</option>
+                <option value="corporate">Corporate</option>
+            </select>
+            <p *ngIf="myForm.get('type_of_shoot')?.errors?.['required'] && myForm.get('type_of_shoot')?.touched"
+                [style.color]='"red"'>Selection is required.</p>
+            <p></p>
+            <label for="animal">Animal to be photographed</label>
+            <br>
+            <select name="animal" id="animal" formControlName="animal">
+                <option value="cat">Cat</option>
+                <option value="dog">Dog</option>
+                <option value="wild_animal">Wild Animal</option>
+                <option value="birds">Birds</option>
+            </select>
+            <p *ngIf="myForm.get('animal')?.errors?.['required'] && myForm.get('animal')?.touched"
+                [style.color]='"red"'>Selection is required.</p>
+            <p></p>
+            <label for="number_of_animals">Number of Animals to be photographed</label>
+            <br>
+            <select name="number_of_animals" id="number_of_animals" formControlName="number_of_animals">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4plus">4+</option>
+            </select>
+            <p *ngIf="myForm.get('number_of_animals')?.errors?.['required'] && myForm.get('number_of_animals')?.touched"
+                [style.color]='"red"'>Selection is required.</p>
+            <p></p>
+            <button [disabled]="myForm.invalid" type="submit">
+                Submit
+            </button>
+        </form>
+
+    </div>
+</div>

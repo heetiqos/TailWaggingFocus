@@ -1,0 +1,27 @@
+/* Some global styling has been added in styles.css */
+
+.body{
+    position: relative;
+    height: 20vh;
+    width: 100vw;
+    background-color: rgb(255,193,7);
+    margin: 0rem;
+    overflow:hidden ;    
+}
+h3{
+    color: black;
+}
+#image-track > .image{
+    width: 15vmin;
+    height:15vmin;
+    object-fit: cover;
+    object-position: center;
+}
+
+#image-track{
+   display: flex; 
+   gap: 4vmin;
+   position: absolute;
+   left: 50%;
+   transform: translate(0% -50%);
+}

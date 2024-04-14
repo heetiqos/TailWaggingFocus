@@ -1,0 +1,51 @@
+<app-hero></app-hero>
+
+<div class="styl">
+  <br>
+  <h1> Welcome</h1>
+  <br>
+  <h3>What can Tail Wagging Focus offer you?</h3>
+  <br>
+  <p>We at Tail Wagging Focus are specialists in animal photography. Your pet can be as close as a family member to you,
+    and therefore you want to place a picture of your companion with all the other family pictures you have? No problem,
+    we've got your back. Are you in an animal-related business and need professionally taken pictures for your company,
+    farm, or shop? That can be done! We offer our services indoor and outdoor, depending on your preference and wishes.
+    If you would like to book a shoot with us, please contact us via email or call us so we can set up an appointment
+    for a planning session. There we will discuss the options we can offer you and show you some examples so you can get
+    an idea of the shoot. When all the necessary steps are taken, we'll make an appointment for the shoot, and three
+    weeks later, your pictures will be sent to you.
+
+    Have a look at our portfolio and get inspired!
+  </p>
+  <br>
+  <div class="container text-center">
+    <div class="row g-2">
+      <div class="col-6">
+        <div class="p-3"><img src="./assets/picproj/pets-catsdogs.jpg" alt="" width="500px"> Photoshoot for Your
+          Companion at Home </div>
+      </div>
+      <div class="col-6">
+        <div class="p-3"><img src="./assets/picproj/dog+ b&w.jpg" alt="" width="500px"> You and Your Animal </div>
+      </div>
+      <div class="col-6">
+        <div class="p-3"><img src="./assets/picproj/cow + babycow.jpg" alt="" width="500px"> Photoshoots for Animal
+          related Business </div>
+      </div>
+      <div class="col-6">
+        <div class="p-3"><img src="./assets/picproj/capybara-3979875_1280.jpg" alt="" width="500px">Wildlife from far
+          away </div>
+      </div>
+    </div>
+  </div>
+  <br>
+</div>
+<div class="styllow">
+  <div class="d-grid gap-2 col-6 mx-auto">
+    <a (click)="toggleComponent()" class="btn btn-warning" type="button">Curious? - Klick here to view the Portfolio
+      below!</a>
+  </div>
+  <div *ngIf="showComponent">
+    <app-portfolio></app-portfolio>
+  </div>
+  <br>
+</div>

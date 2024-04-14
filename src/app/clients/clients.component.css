@@ -1,0 +1,13 @@
+/* Some global styling has been added in styles.css */
+
+.container{
+    width:60%;
+    margin: auto;
+}
+
+img{
+height: 300px;
+width: 300px;
+object-fit: contain;
+margin: 15px;
+}

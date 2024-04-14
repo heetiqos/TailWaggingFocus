@@ -1,0 +1,72 @@
+/* Some global styling has been added in styles.css */
+.container{
+    width: 80%;
+}
+
+h2{
+    padding-top: 2vh;
+    text-align: center;
+    font-weight: normal;
+    font-size:medium;
+}
+.container{
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 2vh;
+    padding-bottom: 5vh;
+    position:relative;
+}
+
+h3{
+    font-weight: normal;
+    color: #333;
+    text-align: center;
+    padding: 2vh;
+}
+
+img {
+    object-fit: cover;
+}
+
+.img1{
+
+ float:right;
+ height: 200px;
+ width: 200px;
+margin: 15px;
+border-radius: 50%;
+}
+.img2{
+
+    float:left;
+    height: 200px;
+    width: 200px;
+   margin: 15px;
+   border-radius: 50%;
+   }
+
+#flex{
+    display: flex;
+    justify-content:start;
+    gap: 5vh;
+    margin: 2vw;
+}
+
+h4{
+    padding-top: 2vh;
+}
+h5{
+    padding-top: 2vh;
+    text-align: center;
+    font-weight: normal;
+    font-size:medium;
+}
+
+/* #contact{
+    padding-top: 2vh;
+    display: flex;
+    flex-direction: row;
+    gap: 2vh;
+    font-size:xx-large
+
+} */

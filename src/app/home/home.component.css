@@ -1,0 +1,20 @@
+/* Some global styling has been added in styles.css */
+
+.styl {
+    background-color: rgb(238, 238, 235);
+}
+
+
+h3 {
+    text-align: center;
+    text-decoration: underline rgb(255, 193, 7);
+}
+
+p {
+    text-align: center;
+    padding: 3rem;
+}
+
+.styllow {
+    background-color: rgb(238, 238, 235);
+}
