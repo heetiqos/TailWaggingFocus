@@ -15,6 +15,22 @@ p {
     padding: 3rem;
 }
 
+.p-3{
+    position: relative;
+}
+
+.overlay{
+    padding: 1vh;
+    color: white;
+    text-align: center;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 70%;
+    position: absolute;
+    background: linear-gradient(to right ,rgb(128, 126, 126),rgb(168, 167, 167), rgb(212, 212, 212));
+}
+
 .styllow {
     background-color: rgb(238, 238, 235);
 }

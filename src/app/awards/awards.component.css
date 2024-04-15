@@ -12,15 +12,15 @@ h3{
     color: black;
 }
 #image-track > .image{
-    width: 15vmin;
-    height:15vmin;
+    width: 7vw;
+    height:7vw;
     object-fit: cover;
     object-position: center;
 }
 
 #image-track{
    display: flex; 
-   gap: 4vmin;
+   gap: 3vw;
    position: absolute;
    left: 50%;
    transform: translate(0% -50%);
