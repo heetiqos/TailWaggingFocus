@@ -4,7 +4,9 @@
     background-color: rgb(238, 238, 235);
 }
 
-
+img{
+    width:100%;
+}
 h3 {
     text-align: center;
     text-decoration: underline rgb(255, 193, 7);

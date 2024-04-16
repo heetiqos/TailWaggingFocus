@@ -8,5 +8,12 @@
 /* .navbar-text{
     width: 25%;
     display: flex;
-    justify-content: space-between;
+    gap: 5px;
+}
+.nt{
+    width: fit-content;
 } */
+
+a{
+margin: 0 5px;
+}
